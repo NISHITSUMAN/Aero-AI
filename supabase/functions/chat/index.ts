@@ -1,3 +1,12 @@
+// Add this at the top for TypeScript compatibility
+declare const Deno: any;
+
+// If using Deno, ensure you run with --unstable and --allow-net flags.
+// If using Node.js, replace with an appropriate HTTP server, e.g. Express or http.createServer.
+// Example for Node.js (uncomment below and comment out Deno import):
+// import { createServer } from "http";
+// const serve = (handler: (req: Request) => Promise<Response>) => createServer((req, res) => { /* ... */ });
+
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
 const corsHeaders = {
@@ -10,7 +19,13 @@ serve(async (req) => {
 
   try {
     const { messages } = await req.json();
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    // Cross-platform environment variable access (Deno/Node)
+    let LOVABLE_API_KEY: string | undefined;
+    if (typeof Deno !== "undefined" && Deno.env) {
+      LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    } else if (typeof process !== "undefined" && process.env) {
+      LOVABLE_API_KEY = process.env.LOVABLE_API_KEY;
+    }
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY is not configured");
 
     const systemPrompt = `You are Aeromatrics 🤖, an advanced AI assistant designed to provide instant, accurate, and friendly responses. Your main goals are:

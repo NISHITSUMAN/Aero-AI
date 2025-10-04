@@ -41,7 +41,7 @@ All colors MUST be HSL.
     /* Custom gradients and colors */
     --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(33 100% 50%));
     --gradient-secondary: linear-gradient(135deg, hsl(220 90% 56%), hsl(250 80% 60%));
-    --gradient-hero: linear-gradient(to bottom, hsl(252 100% 99%), hsl(240 60% 97%));
+    --gradient-hero: linear-gradient(to bottom, hsl(270, 6%, 6%), hsl(240, 13%, 6%));
     
     --ai-bubble: 245 60% 97%;
     --user-bubble: 25 95% 53%;
