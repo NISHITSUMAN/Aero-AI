@@ -51,10 +51,11 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden mt-4 pb-4 flex flex-col gap-3"
           >
-            <a href="#home" className="text-sm font-medium hover:text-accent transition-colors">Home</a>
-            <a href="#globe" className="text-sm font-medium hover:text-accent transition-colors">3D Earth</a>
+            <a href="https://aerometrics.vercel.app/" className="text-sm font-medium hover:text-accent transition-colors">Home</a>
+            <a href="https://globe-3d-chi.vercel.app/" className="text-sm font-medium hover:text-accent transition-colors">3D Earth</a>
             <a href="#forecast" className="text-sm font-medium hover:text-accent transition-colors">Forecast</a>
             <a href="#data" className="text-sm font-medium hover:text-accent transition-colors">Data</a>
+            <a href="https://aero-ai-mu.vercel.app/" className="text-sm font-medium hover:text-accent transition-colors">AI</a>
           </motion.nav>
         )}
       </div>
