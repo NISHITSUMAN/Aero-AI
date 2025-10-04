@@ -51,38 +51,38 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 240 10% 8%;
-    --foreground: 0 0% 98%;
+    --background: 220 30% 12%; /* deep blue background */
+    --foreground: 220 15% 92%; /* light blue/white text */
 
-    --card: 240 10% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 25% 16%;
+    --card-foreground: 220 15% 92%;
 
-    --popover: 240 10% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 25% 16%;
+    --popover-foreground: 220 15% 92%;
 
-    --primary: 25 95% 53%;
+    --primary: 220 90% 56%; /* vibrant blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 90% 56%;
+    --secondary: 210 80% 40%; /* muted blue */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 10% 18%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 33 100% 50%;
+    --accent: 200 100% 50%; /* blue accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 18%;
-    --input: 240 10% 18%;
-    --ring: 25 95% 53%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 90% 56%;
 
-    --ai-bubble: 240 10% 15%;
-    --user-bubble: 25 95% 53%;
+    --ai-bubble: 220 30% 18%; /* blue bubble */
+    --user-bubble: 220 90% 56%;
 
-    --gradient-hero: linear-gradient(to bottom, hsl(240 10% 8%), hsl(240 10% 12%));
+    --gradient-hero: linear-gradient(to bottom, hsl(220 30% 12%), hsl(220 25% 16%));
   }
 }
 
