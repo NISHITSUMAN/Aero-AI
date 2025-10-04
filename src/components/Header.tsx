@@ -24,8 +24,8 @@ export default function Header() {
               <Satellite className="w-8 h-8 text-accent" />
             </motion.div>
             <div>
-              <h1 className="text-xl font-bold text-gradient">Aeromatrics</h1>
-              <p className="text-xs text-muted-foreground">Air Quality Forecast System</p>
+              <h1 className="text-xl font-bold text-gradient">Aero AI</h1>
+              <p className="text-xs text-muted-foreground">AI for anything, anywher</p>
             </div>
           </div>
 
