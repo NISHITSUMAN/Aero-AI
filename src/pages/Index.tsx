@@ -17,6 +17,13 @@ const Index = () => {
     scrollToBottom();
   }, [messages, isLoading]);
 
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+    return () => {
+      document.documentElement.classList.remove("dark");
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[var(--gradient-hero)] flex flex-col">
       {/* Header */}
