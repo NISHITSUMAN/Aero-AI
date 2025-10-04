@@ -4,6 +4,7 @@ import ChatMessage from "@/components/ChatMessage";
 import ChatInput from "@/components/ChatInput";
 import TypingIndicator from "@/components/TypingIndicator";
 import { useStreamingChat } from "@/hooks/useStreamingChat";
+import Header from "@/components/Header";
 
 const Index = () => {
   const { messages, isLoading, sendMessage } = useStreamingChat();
@@ -26,24 +27,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[var(--gradient-hero)] flex flex-col">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Aeromatrics 🤖
-              </h1>
-              <p className="text-xs text-muted-foreground">
-                AI Assistant • English, हिंदी, मराठी
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Chat Area */}
       <main className="flex-1 container mx-auto px-4 py-6 flex flex-col max-w-4xl">
