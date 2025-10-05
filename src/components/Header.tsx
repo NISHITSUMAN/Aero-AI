@@ -30,7 +30,7 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#home" className="text-sm font-medium hover:text-accent transition-colors">Home</a>
+            <a href="https://aerometrics.vercel.app/" className="text-sm font-medium hover:text-accent transition-colors">Home</a>
             <a href="https://globe-3d-chi.vercel.app/" className="text-sm font-medium hover:text-accent transition-colors">3D Earth</a>
             <a href="/components/AQICard" className="text-sm font-medium hover:text-accent transition-colors">Forecast</a>
             <a href="#data" className="text-sm font-medium hover:text-accent transition-colors">Data</a>
